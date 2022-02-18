@@ -33,6 +33,7 @@ namespace MissionPlanner.GCSViews
             this.tabControlactions = new System.Windows.Forms.TabControl();
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multiLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
             this.quickView6 = new MissionPlanner.Controls.QuickView();
@@ -77,13 +78,13 @@ namespace MissionPlanner.GCSViews
             this.myButton3 = new MissionPlanner.Controls.MyButton();
             this.tabPagePreFlight = new System.Windows.Forms.TabPage();
             this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
-            this.tabGauges = new System.Windows.Forms.TabPage();
+            //this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.Gheading = new MissionPlanner.Controls.HSI();
             this.Galt = new AGaugeApp.AGauge();
             this.Gspeed = new AGaugeApp.AGauge();
-            this.tabTransponder = new System.Windows.Forms.TabPage();
+          //  this.tabTransponder = new System.Windows.Forms.TabPage();
             this.NACp_tb = new System.Windows.Forms.TextBox();
             this.NIC_tb = new System.Windows.Forms.TextBox();
             this.NACp_lbl = new System.Windows.Forms.Label();
@@ -99,8 +100,8 @@ namespace MissionPlanner.GCSViews
             this.STBY_btn = new System.Windows.Forms.Button();
             this.ON_btn = new System.Windows.Forms.Button();
             this.Mode_clb = new System.Windows.Forms.CheckedListBox();
-            this.tabStatus = new System.Windows.Forms.TabPage();
-            this.tabServo = new System.Windows.Forms.TabPage();
+            //this.tabStatus = new System.Windows.Forms.TabPage();
+           // this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
             this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
             this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
@@ -120,7 +121,7 @@ namespace MissionPlanner.GCSViews
             this.relayOptions4 = new MissionPlanner.Controls.RelayOptions();
             this.relayOptions5 = new MissionPlanner.Controls.RelayOptions();
             this.relayOptions6 = new MissionPlanner.Controls.RelayOptions();
-            this.tabScripts = new System.Windows.Forms.TabPage();
+          //  this.tabScripts = new System.Windows.Forms.TabPage();
             this.checkBoxRedirectOutput = new System.Windows.Forms.CheckBox();
             this.BUT_edit_selected = new MissionPlanner.Controls.MyButton();
             this.labelSelectedScript = new System.Windows.Forms.Label();
@@ -128,7 +129,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_abort_script = new MissionPlanner.Controls.MyButton();
             this.labelScriptStatus = new System.Windows.Forms.Label();
             this.BUT_select_script = new MissionPlanner.Controls.MyButton();
-            this.tabPayload = new System.Windows.Forms.TabPage();
+           // this.tabPayload = new System.Windows.Forms.TabPage();
             this.BUT_PayloadFolder = new MissionPlanner.Controls.MyButton();
             this.groupBoxRoll = new System.Windows.Forms.GroupBox();
             this.TXT_gimbalRollPos = new System.Windows.Forms.TextBox();
@@ -214,7 +215,6 @@ namespace MissionPlanner.GCSViews
             this.scriptChecker = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.multiLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -236,14 +236,14 @@ namespace MissionPlanner.GCSViews
             this.tabPagemessages.SuspendLayout();
             this.tabActionsSimple.SuspendLayout();
             this.tabPagePreFlight.SuspendLayout();
-            this.tabGauges.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
-            this.tabTransponder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Squawk_nud)).BeginInit();
-            this.tabServo.SuspendLayout();
+           // this.tabGauges.SuspendLayout();
+            //((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
+          //  this.tabTransponder.SuspendLayout();
+          //  ((System.ComponentModel.ISupportInitialize)(this.Squawk_nud)).BeginInit();
+           // this.tabServo.SuspendLayout();
             this.flowLayoutPanelServos.SuspendLayout();
-            this.tabScripts.SuspendLayout();
-            this.tabPayload.SuspendLayout();
+          //  this.tabScripts.SuspendLayout();
+          //  this.tabPayload.SuspendLayout();
             this.groupBoxRoll.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePayloadTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarRoll)).BeginInit();
@@ -411,6 +411,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripHud
             // 
+            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
             this.setAspectRatioToolStripMenuItem,
@@ -533,12 +534,12 @@ namespace MissionPlanner.GCSViews
             this.tabControlactions.Controls.Add(this.tabPagemessages);
             this.tabControlactions.Controls.Add(this.tabActionsSimple);
             this.tabControlactions.Controls.Add(this.tabPagePreFlight);
-            this.tabControlactions.Controls.Add(this.tabGauges);
-            this.tabControlactions.Controls.Add(this.tabTransponder);
-            this.tabControlactions.Controls.Add(this.tabStatus);
-            this.tabControlactions.Controls.Add(this.tabServo);
-            this.tabControlactions.Controls.Add(this.tabScripts);
-            this.tabControlactions.Controls.Add(this.tabPayload);
+           // this.tabControlactions.Controls.Add(this.tabGauges);
+          //  this.tabControlactions.Controls.Add(this.tabTransponder);
+          //  this.tabControlactions.Controls.Add(this.tabStatus);
+          //  this.tabControlactions.Controls.Add(this.tabServo);
+          //  this.tabControlactions.Controls.Add(this.tabScripts);
+          //  this.tabControlactions.Controls.Add(this.tabPayload);
             this.tabControlactions.Controls.Add(this.tabTLogs);
             this.tabControlactions.Controls.Add(this.tablogbrowse);
             resources.ApplyResources(this.tabControlactions, "tabControlactions");
@@ -549,6 +550,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripactionstab
             // 
+            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.multiLineToolStripMenuItem});
@@ -560,6 +562,12 @@ namespace MissionPlanner.GCSViews
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
             resources.ApplyResources(this.customizeToolStripMenuItem, "customizeToolStripMenuItem");
             this.customizeToolStripMenuItem.Click += new System.EventHandler(this.customizeToolStripMenuItem_Click);
+            // 
+            // multiLineToolStripMenuItem
+            // 
+            this.multiLineToolStripMenuItem.Name = "multiLineToolStripMenuItem";
+            resources.ApplyResources(this.multiLineToolStripMenuItem, "multiLineToolStripMenuItem");
+            this.multiLineToolStripMenuItem.Click += new System.EventHandler(this.multiLineToolStripMenuItem_Click);
             // 
             // tabQuick
             // 
@@ -595,6 +603,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripQuickView
             // 
+            this.contextMenuStripQuickView.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.setViewCountToolStripMenuItem,
             this.undockToolStripMenuItem});
@@ -1070,14 +1079,14 @@ namespace MissionPlanner.GCSViews
             // 
             // tabGauges
             // 
-            this.tabGauges.Controls.Add(this.Gvspeed);
+            /*this.tabGauges.Controls.Add(this.Gvspeed);
             this.tabGauges.Controls.Add(this.Gheading);
             this.tabGauges.Controls.Add(this.Galt);
             this.tabGauges.Controls.Add(this.Gspeed);
             resources.ApplyResources(this.tabGauges, "tabGauges");
             this.tabGauges.Name = "tabGauges";
             this.tabGauges.UseVisualStyleBackColor = true;
-            this.tabGauges.Resize += new System.EventHandler(this.tabPage1_Resize);
+            this.tabGauges.Resize += new System.EventHandler(this.tabPage1_Resize);*/
             // 
             // Gvspeed
             // 
@@ -1526,7 +1535,7 @@ namespace MissionPlanner.GCSViews
             // 
             // tabTransponder
             // 
-            resources.ApplyResources(this.tabTransponder, "tabTransponder");
+           /* resources.ApplyResources(this.tabTransponder, "tabTransponder");
             this.tabTransponder.Controls.Add(this.NACp_tb);
             this.tabTransponder.Controls.Add(this.NIC_tb);
             this.tabTransponder.Controls.Add(this.NACp_lbl);
@@ -1543,7 +1552,7 @@ namespace MissionPlanner.GCSViews
             this.tabTransponder.Controls.Add(this.ON_btn);
             this.tabTransponder.Controls.Add(this.Mode_clb);
             this.tabTransponder.Name = "tabTransponder";
-            this.tabTransponder.UseVisualStyleBackColor = true;
+            this.tabTransponder.UseVisualStyleBackColor = true; */
             // 
             // NACp_tb
             // 
@@ -1663,16 +1672,16 @@ namespace MissionPlanner.GCSViews
             // 
             // tabStatus
             // 
-            resources.ApplyResources(this.tabStatus, "tabStatus");
+           /* resources.ApplyResources(this.tabStatus, "tabStatus");
             this.tabStatus.Name = "tabStatus";
-            this.tabStatus.Paint += new System.Windows.Forms.PaintEventHandler(this.tabStatus_Paint);
+            this.tabStatus.Paint += new System.Windows.Forms.PaintEventHandler(this.tabStatus_Paint); */
             // 
             // tabServo
             // 
-            this.tabServo.Controls.Add(this.flowLayoutPanelServos);
+           /* this.tabServo.Controls.Add(this.flowLayoutPanelServos);
             resources.ApplyResources(this.tabServo, "tabServo");
             this.tabServo.Name = "tabServo";
-            this.tabServo.UseVisualStyleBackColor = true;
+            this.tabServo.UseVisualStyleBackColor = true; */
             // 
             // flowLayoutPanelServos
             // 
@@ -1807,7 +1816,7 @@ namespace MissionPlanner.GCSViews
             // 
             // tabScripts
             // 
-            this.tabScripts.Controls.Add(this.checkBoxRedirectOutput);
+           /* this.tabScripts.Controls.Add(this.checkBoxRedirectOutput);
             this.tabScripts.Controls.Add(this.BUT_edit_selected);
             this.tabScripts.Controls.Add(this.labelSelectedScript);
             this.tabScripts.Controls.Add(this.BUT_run_script);
@@ -1816,7 +1825,7 @@ namespace MissionPlanner.GCSViews
             this.tabScripts.Controls.Add(this.BUT_select_script);
             resources.ApplyResources(this.tabScripts, "tabScripts");
             this.tabScripts.Name = "tabScripts";
-            this.tabScripts.UseVisualStyleBackColor = true;
+            this.tabScripts.UseVisualStyleBackColor = true; */
             // 
             // checkBoxRedirectOutput
             // 
@@ -1878,14 +1887,14 @@ namespace MissionPlanner.GCSViews
             // 
             // tabPayload
             // 
-            this.tabPayload.Controls.Add(this.BUT_PayloadFolder);
+           /* this.tabPayload.Controls.Add(this.BUT_PayloadFolder);
             this.tabPayload.Controls.Add(this.groupBoxRoll);
             this.tabPayload.Controls.Add(this.groupBoxYaw);
             this.tabPayload.Controls.Add(this.BUT_resetGimbalPos);
             this.tabPayload.Controls.Add(this.groupBoxPitch);
             resources.ApplyResources(this.tabPayload, "tabPayload");
             this.tabPayload.Name = "tabPayload";
-            this.tabPayload.UseVisualStyleBackColor = true;
+            this.tabPayload.UseVisualStyleBackColor = true; */
             // 
             // BUT_PayloadFolder
             // 
@@ -2273,10 +2282,12 @@ namespace MissionPlanner.GCSViews
             this.zg1.ScrollMinX = 0D;
             this.zg1.ScrollMinY = 0D;
             this.zg1.ScrollMinY2 = 0D;
+            this.zg1.Load += new System.EventHandler(this.zg1_Load);
             this.zg1.DoubleClick += new System.EventHandler(this.zg1_DoubleClick);
             // 
             // contextMenuStripMap
             // 
+            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
@@ -2432,7 +2443,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2633,12 +2644,6 @@ namespace MissionPlanner.GCSViews
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
             // 
-            // multiLineToolStripMenuItem
-            // 
-            this.multiLineToolStripMenuItem.Name = "multiLineToolStripMenuItem";
-            resources.ApplyResources(this.multiLineToolStripMenuItem, "multiLineToolStripMenuItem");
-            this.multiLineToolStripMenuItem.Click += new System.EventHandler(this.multiLineToolStripMenuItem_Click);
-            // 
             // FlightData
             // 
             this.Controls.Add(this.MainH);
@@ -2671,16 +2676,16 @@ namespace MissionPlanner.GCSViews
             this.tabPagemessages.PerformLayout();
             this.tabActionsSimple.ResumeLayout(false);
             this.tabPagePreFlight.ResumeLayout(false);
-            this.tabGauges.ResumeLayout(false);
+          //  this.tabGauges.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
-            this.tabTransponder.ResumeLayout(false);
-            this.tabTransponder.PerformLayout();
+           // this.tabTransponder.ResumeLayout(false);
+           // this.tabTransponder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Squawk_nud)).EndInit();
-            this.tabServo.ResumeLayout(false);
+           // this.tabServo.ResumeLayout(false);
             this.flowLayoutPanelServos.ResumeLayout(false);
-            this.tabScripts.ResumeLayout(false);
-            this.tabScripts.PerformLayout();
-            this.tabPayload.ResumeLayout(false);
+           // this.tabScripts.ResumeLayout(false);
+           // this.tabScripts.PerformLayout();
+          //  this.tabPayload.ResumeLayout(false);
             this.groupBoxRoll.ResumeLayout(false);
             this.groupBoxRoll.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePayloadTab)).EndInit();
@@ -2746,8 +2751,8 @@ namespace MissionPlanner.GCSViews
         public Controls.myGMAP gMapControl1;
         private ZedGraph.ZedGraphControl zg1;
         public System.Windows.Forms.TabControl tabControlactions;
-        public System.Windows.Forms.TabPage tabGauges;
-        public System.Windows.Forms.TabPage tabStatus;
+       // public System.Windows.Forms.TabPage tabGauges;
+       // public System.Windows.Forms.TabPage tabStatus;
         public System.Windows.Forms.TabPage tabActions;
         public System.Windows.Forms.TabPage tabTLogs;
         private System.Windows.Forms.ComboBox CMB_modes;
@@ -2783,7 +2788,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.ToolStripMenuItem triggerCameraToolStripMenuItem;
         private Controls.MyTrackBar TRK_zoom;
         private Label LBL_logfn;
-        public System.Windows.Forms.TabPage tabServo;
+       // public System.Windows.Forms.TabPage tabServo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelServos;
         private Controls.ServoOptions servoOptions1;
         private Controls.ServoOptions servoOptions2;
@@ -2815,7 +2820,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TabPage tabScripts;
+      //  public System.Windows.Forms.TabPage tabScripts;
         private Controls.MyButton BUT_edit_selected;
         private System.Windows.Forms.Label labelSelectedScript;
         private Controls.MyButton BUT_run_script;
@@ -2875,7 +2880,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.ToolStripMenuItem setViewCountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setGStreamerSourceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setEKFHomeHereToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabPayload;
+      //  private System.Windows.Forms.TabPage tabPayload;
         private System.Windows.Forms.BindingSource bindingSourcePayloadTab;
         private System.Windows.Forms.TrackBar trackBarYaw;
         private System.Windows.Forms.TrackBar trackBarRoll;
@@ -2916,7 +2921,7 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.Label FlightID_label;
         private System.Windows.Forms.TextBox FlightID_tb;
         private System.Windows.Forms.Button IDENT_btn;
-        public System.Windows.Forms.TabPage tabTransponder;
+      //  public System.Windows.Forms.TabPage tabTransponder;
         private System.Windows.Forms.Button XPDRConnect_btn;
         private System.Windows.Forms.CheckedListBox fault_clb;
         private System.Windows.Forms.Label NACp_lbl;

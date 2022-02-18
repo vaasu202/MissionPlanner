@@ -683,14 +683,14 @@ namespace MissionPlanner.GCSViews
                 }
             }
 
-            if (tabControlactions.TabPages.Contains(tabPayload) == true && gimbalPresent == false)
+          /*  if (tabControlactions.TabPages.Contains(tabPayload) == true && gimbalPresent == false)
             {
                 tabControlactions.TabPages.Remove(tabPayload);
             }
             else if (tabControlactions.TabPages.Contains(tabPayload) == false && gimbalPresent == true)
             {
                 tabControlactions.TabPages.Add(tabPayload);
-            }
+            } */
         }
 
         internal void BUT_run_script_Click(object sender, EventArgs e)
@@ -4527,15 +4527,15 @@ namespace MissionPlanner.GCSViews
         {
             Messagetabtimer.Stop();
 
-            if (tabControlactions.SelectedTab == tabStatus)
+          /*  if (tabControlactions.SelectedTab == tabStatus)
             {
                 tabControlactions.Visible = false;
                 tabStatus.Visible = false;
                 tabStatus_Resize(sender, e);
                 tabStatus.Visible = true;
                 tabControlactions.Visible = true;
-            }
-            else if (tabControlactions.SelectedTab == tabPagemessages)
+            } */
+            if (tabControlactions.SelectedTab == tabPagemessages)
             {
                 Messagetabtimer.Start();
             }
@@ -4828,32 +4828,32 @@ namespace MissionPlanner.GCSViews
                         bindingSourceHud.UpdateDataSource(MainV2.comPort.MAV.cs));
                     //Console.WriteLine("DONE ");
 
-                    if (tabControlactions.SelectedTab == tabStatus)
+                  /*  if (tabControlactions.SelectedTab == tabStatus)
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(
                             bindingSourceStatusTab.UpdateDataSource(MainV2.comPort.MAV.cs));
                         this.tabStatus.Invalidate();
-                    }
-                    else if (tabControlactions.SelectedTab == tabQuick)
+                    } */
+                    if (tabControlactions.SelectedTab == tabQuick)
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(
                             bindingSourceQuickTab.UpdateDataSource(MainV2.comPort.MAV.cs));
                     }
-                    else if (tabControlactions.SelectedTab == tabGauges)
+                   /* else if (tabControlactions.SelectedTab == tabGauges)
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(
                             bindingSourceGaugesTab.UpdateDataSource(MainV2.comPort.MAV.cs));
-                    }
+                    } */
                     else if (tabControlactions.SelectedTab == tabPagePreFlight)
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(
                             bindingSourceGaugesTab.UpdateDataSource(MainV2.comPort.MAV.cs));
                     }
-                    else if (tabControlactions.SelectedTab == tabPayload)
+                    /*else if (tabControlactions.SelectedTab == tabPayload)
                     {
                         MainV2.comPort.MAV.cs.UpdateCurrentSettings(
                             bindingSourcePayloadTab.UpdateDataSource(MainV2.comPort.MAV.cs));
-                    }
+                    } */
                 }
                 else
                 {
@@ -5311,7 +5311,7 @@ namespace MissionPlanner.GCSViews
 
         }
 
-        private void tabStatus_Paint(object sender, PaintEventArgs e)
+       /* private void tabStatus_Paint(object sender, PaintEventArgs e)
         {
             var bmp = new Bitmap(tabStatus.DisplayRectangle.Width, tabStatus.DisplayRectangle.Height);
             var g = Graphics.FromImage(bmp);
@@ -5353,7 +5353,7 @@ namespace MissionPlanner.GCSViews
             e.Graphics.TranslateTransform(tabStatus.AutoScrollPosition.X,
                 tabStatus.AutoScrollPosition.Y);
             e.Graphics.DrawImageUnscaled(bmp, 0, 0);
-        }
+        } */
 
         private void gMapControl1_MouseUp(object sender, MouseEventArgs e)
         {
@@ -5724,6 +5724,11 @@ namespace MissionPlanner.GCSViews
         {
             tabControlactions.Multiline = !tabControlactions.Multiline;
             Settings.Instance["tabControlactions_Multiline"] = tabControlactions.Multiline.ToString();
+        }
+
+        private void zg1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

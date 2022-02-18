@@ -57,7 +57,7 @@ namespace MissionPlanner
             public abstract Image config_tuning { get; }
             public abstract Image sim { get; }
             public abstract Image terminal { get; }
-            public abstract Image help { get; }
+           // public abstract Image help { get; }
             public abstract Image donate { get; }
             public abstract Image connect { get; }
             public abstract Image disconnect { get; }
@@ -134,7 +134,7 @@ namespace MissionPlanner
                 }
             }
 
-            public override Image help
+           /* public override Image help
             {
                 get
                 {
@@ -143,7 +143,7 @@ namespace MissionPlanner
                     else
                         return global::MissionPlanner.Properties.Resources.light_help_icon;
                 }
-            }
+            } */
 
             public override Image donate
             {
@@ -271,7 +271,7 @@ namespace MissionPlanner
                 }
             }
 
-            public override Image help
+            /*public override Image help
             {
                 get
                 {
@@ -280,7 +280,7 @@ namespace MissionPlanner
                     else
                         return global::MissionPlanner.Properties.Resources.dark_help_icon;
                 }
-            }
+            } */
 
             public override Image donate
             {
@@ -550,8 +550,8 @@ namespace MissionPlanner
 
         public void updateLayout(object sender, EventArgs e)
         {
-            MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
-            MenuHelp.Visible = DisplayConfiguration.displayHelp;
+            //MenuSimulation.Visible = DisplayConfiguration.displaySimulation;
+           // MenuHelp.Visible = DisplayConfiguration.displayHelp;
             MissionPlanner.Controls.BackstageView.BackstageView.Advanced = DisplayConfiguration.isAdvancedMode;
 
             // force autohide on
@@ -610,7 +610,7 @@ namespace MissionPlanner
                     t.TabPages.Remove(FlightData.tabActionsSimple);
                 }
 
-                if (DisplayConfiguration.displayGaugesTab && !t.TabPages.Contains(FlightData.tabGauges))
+                /*if (DisplayConfiguration.displayGaugesTab && !t.TabPages.Contains(FlightData.tabGauges))
                 {
                     t.TabPages.Add(FlightData.tabGauges);
                 }
@@ -618,17 +618,17 @@ namespace MissionPlanner
                 {
                     t.TabPages.Remove(FlightData.tabGauges);
                 }
-
-                if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
+                */
+              /*  if (DisplayConfiguration.displayStatusTab && !t.TabPages.Contains(FlightData.tabStatus))
                 {
                     t.TabPages.Add(FlightData.tabStatus);
                 }
                 else if (!DisplayConfiguration.displayStatusTab && t.TabPages.Contains(FlightData.tabStatus))
                 {
                     t.TabPages.Remove(FlightData.tabStatus);
-                }
+                } */
 
-                if (DisplayConfiguration.displayServoTab && !t.TabPages.Contains(FlightData.tabServo))
+               /* if (DisplayConfiguration.displayServoTab && !t.TabPages.Contains(FlightData.tabServo))
                 {
                     t.TabPages.Add(FlightData.tabServo);
                 }
@@ -636,15 +636,15 @@ namespace MissionPlanner
                 {
                     t.TabPages.Remove(FlightData.tabServo);
                 }
-
-                if (DisplayConfiguration.displayScriptsTab && !t.TabPages.Contains(FlightData.tabScripts))
+                 */
+             /*   if (DisplayConfiguration.displayScriptsTab && !t.TabPages.Contains(FlightData.tabScripts))
                 {
                     t.TabPages.Add(FlightData.tabScripts);
                 }
                 else if (!DisplayConfiguration.displayScriptsTab && t.TabPages.Contains(FlightData.tabScripts))
                 {
                     t.TabPages.Remove(FlightData.tabScripts);
-                }
+                } */
 
                 if (DisplayConfiguration.displayTelemetryTab && !t.TabPages.Contains(FlightData.tabTLogs))
                 {
@@ -1127,7 +1127,7 @@ namespace MissionPlanner
             }
 
             MenuArduPilot.Image = new Bitmap(Properties.Resources._0d92fed790a3a70170e61a86db103f399a595c70,
-                (int) (200), 31);
+                (int) (65), 37);
             MenuArduPilot.Width = MenuArduPilot.Image.Width;
 
             if (Program.Logo2 != null)
@@ -1246,19 +1246,19 @@ namespace MissionPlanner
             MenuFlightData.Image = displayicons.fd;
             MenuFlightPlanner.Image = displayicons.fp;
             MenuInitConfig.Image = displayicons.initsetup;
-            MenuSimulation.Image = displayicons.sim;
-            MenuConfigTune.Image = displayicons.config_tuning;
+            //MenuSimulation.Image = displayicons.sim;
+           // MenuConfigTune.Image = displayicons.config_tuning;
             MenuConnect.Image = displayicons.connect;
-            MenuHelp.Image = displayicons.help;
+           // MenuHelp.Image = displayicons.help;
 
 
             MenuFlightData.ForeColor = ThemeManager.TextColor;
             MenuFlightPlanner.ForeColor = ThemeManager.TextColor;
             MenuInitConfig.ForeColor = ThemeManager.TextColor;
-            MenuSimulation.ForeColor = ThemeManager.TextColor;
-            MenuConfigTune.ForeColor = ThemeManager.TextColor;
+            //MenuSimulation.ForeColor = ThemeManager.TextColor;
+           // MenuConfigTune.ForeColor = ThemeManager.TextColor;
             MenuConnect.ForeColor = ThemeManager.TextColor;
-            MenuHelp.ForeColor = ThemeManager.TextColor;
+          //  MenuHelp.ForeColor = ThemeManager.TextColor;
         }
 
         void adsb_UpdatePlanePosition(object sender, MissionPlanner.Utilities.adsb.PointLatLngAltHdg adsb)
@@ -3163,7 +3163,7 @@ namespace MissionPlanner
             MyView.AddScreen(new MainSwitcher.Screen("HWConfig", typeof(GCSViews.InitialSetup), false));
             MyView.AddScreen(new MainSwitcher.Screen("SWConfig", typeof(GCSViews.SoftwareConfig), false));
             MyView.AddScreen(new MainSwitcher.Screen("Simulation", Simulation, true));
-            MyView.AddScreen(new MainSwitcher.Screen("Help", typeof(GCSViews.Help), false));
+          //  MyView.AddScreen(new MainSwitcher.Screen("Help", typeof(GCSViews.Help), false));
 
             try
             {
@@ -4033,10 +4033,10 @@ namespace MissionPlanner
             log.Info("this   width " + this.Width + " height " + this.Height);
         }
 
-        private void MenuHelp_Click(object sender, EventArgs e)
+       /* private void MenuHelp_Click(object sender, EventArgs e)
         {
             MyView.ShowScreen("Help");
-        }
+        } */
 
 
         /// <summary>
@@ -4660,11 +4660,11 @@ namespace MissionPlanner
         {
             try
             {
-                System.Diagnostics.Process.Start("https://ardupilot.org/?utm_source=Menu&utm_campaign=MP");
+                System.Diagnostics.Process.Start("https://www.exosl.com/");
             }
             catch
             {
-                CustomMessageBox.Show("Failed to open url https://ardupilot.org");
+                CustomMessageBox.Show("Failed to open url https://www.exosl.com/");
             }
         }
 
@@ -4795,6 +4795,11 @@ namespace MissionPlanner
                     break;
                 }
             }
+        }
+
+        private void MainV2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
