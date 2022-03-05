@@ -123,7 +123,7 @@ namespace MissionPlanner.GCSViews
                     AddBackstageViewPage(typeof(ConfigParamLoading), Strings.Loading);
             }
 
-            if (MainV2.DisplayConfiguration.displayInstallFirmware)
+            /*if (MainV2.DisplayConfiguration.displayInstallFirmware)
             {
                 // if (!Program.WindowsStoreApp)
                 {
@@ -134,7 +134,7 @@ namespace MissionPlanner.GCSViews
                     AddBackstageViewPage(typeof(ConfigFirmware), rm.GetString("backstageViewPagefw.Text") + " Legacy",
                         isDisConnected);
                 }
-            }
+            }*/
 
 
             var mand = AddBackstageViewPage(typeof(ConfigMandatory), rm.GetString("backstageViewPagemand.Text"), isConnected && gotAllParams);
@@ -197,10 +197,10 @@ namespace MissionPlanner.GCSViews
                 AddBackstageViewPage(typeof(ConfigHWIDs), "HW ID", isConnected && gotAllParams, mand);
 
             var opt = AddBackstageViewPage(typeof(ConfigOptional), rm.GetString("backstageViewPageopt.Text"));
-            if (MainV2.DisplayConfiguration.displayRTKInject)
+            /*if (MainV2.DisplayConfiguration.displayRTKInject)
             {
                 AddBackstageViewPage(typeof(ConfigSerialInjectGPS), "RTK/GPS Inject", true, opt);
-            }
+            }*/
 
             if (MainV2.DisplayConfiguration.displaySikRadio)
             {
@@ -218,11 +218,11 @@ namespace MissionPlanner.GCSViews
                 AddBackstageViewPage(typeof(ConfigBatteryMonitoring), rm.GetString("backstageViewPagebatmon.Text"), isConnected && gotAllParams, opt);
                 AddBackstageViewPage(typeof(ConfigBatteryMonitoring2), rm.GetString("backstageViewPageBatt2.Text"), isConnected && gotAllParams, opt);
             }
-            if (MainV2.DisplayConfiguration.displayCAN)
+            /*if (MainV2.DisplayConfiguration.displayCAN)
             {
                 //AddBackstageViewPage(typeof(ConfigHWCAN), "CAN", isConnected, opt);
                 AddBackstageViewPage(typeof(ConfigDroneCAN), "DroneCAN/UAVCAN", true, opt);
-            }
+            } */
             if (MainV2.DisplayConfiguration.displayJoystick)
             {
                 AddBackstageViewPage(typeof(Joystick.JoystickSetup), "Joystick", true, opt);
@@ -285,14 +285,14 @@ namespace MissionPlanner.GCSViews
                 AddBackstageViewPage(typeof(ConfigFFT), "FFT Setup", isConnected && gotAllParams, opt);
             }
 
-            if (MainV2.DisplayConfiguration.isAdvancedMode)
+            /*if (MainV2.DisplayConfiguration.isAdvancedMode)
             {
                 var adv = AddBackstageViewPage(typeof(ConfigAdvanced), "Advanced");
 
                 AddBackstageViewPage(typeof(ConfigTerminal), "Terminal", true, adv);
 
                 AddBackstageViewPage(typeof(ConfigREPL), "Script REPL", isConnected, adv);
-            }
+            }*/
 
             // remeber last page accessed
             foreach (BackstageViewPage page in backstageView.Pages)

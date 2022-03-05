@@ -1127,7 +1127,7 @@ namespace MissionPlanner
             }
 
             MenuArduPilot.Image = new Bitmap(Properties.Resources._0d92fed790a3a70170e61a86db103f399a595c70,
-                (int) (65), 37);
+                (int) (210), 37);
             MenuArduPilot.Width = MenuArduPilot.Image.Width;
 
             if (Program.Logo2 != null)
@@ -4798,6 +4798,11 @@ namespace MissionPlanner
         }
 
         private void MainV2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripConnectionControl_Click(object sender, EventArgs e)
         {
 
         }

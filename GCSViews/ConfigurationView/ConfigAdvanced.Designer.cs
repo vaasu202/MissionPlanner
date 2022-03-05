@@ -226,6 +226,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ConfigAdvanced";
             resources.ApplyResources(this, "$this");
+            this.Load += new System.EventHandler(this.ConfigAdvanced_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

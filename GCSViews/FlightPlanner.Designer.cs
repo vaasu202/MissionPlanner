@@ -396,6 +396,7 @@ namespace MissionPlanner.GCSViews
             this.coords1.Name = "coords1";
             this.coords1.Vertical = true;
             this.coords1.SystemChanged += new System.EventHandler(this.coords1_SystemChanged);
+            this.coords1.Load += new System.EventHandler(this.coords1_Load);
             // 
             // lbl_status
             // 
@@ -674,7 +675,7 @@ namespace MissionPlanner.GCSViews
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.coords1);
+            //this.panel4.Controls.Add(this.coords1);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
@@ -745,11 +746,11 @@ namespace MissionPlanner.GCSViews
             // 
             // panelMap
             // 
-            this.panelMap.Controls.Add(this.lbl_homedist);
-            this.panelMap.Controls.Add(this.lbl_prevdist);
+            //this.panelMap.Controls.Add(this.lbl_homedist);
+            //this.panelMap.Controls.Add(this.lbl_prevdist);
             this.panelMap.Controls.Add(this.trackBar1);
             this.panelMap.Controls.Add(this.label11);
-            this.panelMap.Controls.Add(this.lbl_distance);
+            //this.panelMap.Controls.Add(this.lbl_distance);
             this.panelMap.Controls.Add(this.cmb_missiontype);
             this.panelMap.Controls.Add(this.MainMap);
             resources.ApplyResources(this.panelMap, "panelMap");
@@ -827,10 +828,12 @@ namespace MissionPlanner.GCSViews
             this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MainMap.ShowTileGridLines = false;
             this.MainMap.Zoom = 0D;
+            this.MainMap.Load += new System.EventHandler(this.MainMap_Load);
             this.MainMap.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMap_Paint);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteWPToolStripMenuItem,
             this.insertWpToolStripMenuItem,
@@ -1400,6 +1403,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripPoly
             // 
+            this.contextMenuStripPoly.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripPoly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addPolygonPointToolStripMenuItem,
             this.clearPolygonToolStripMenuItem,
@@ -1445,6 +1449,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripZoom
             // 
+            this.contextMenuStripZoom.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStripZoom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.zoomToVehicleToolStripMenuItem,
             this.zoomToMissionToolStripMenuItem,

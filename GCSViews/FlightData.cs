@@ -5730,5 +5730,15 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void windDir1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void distanceBar1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -909,6 +909,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAdvanced.ko-KR.resx">
       <DependentUpon>ConfigAdvanced.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigFFT.resx">
       <DependentUpon>ConfigFFT.cs</DependentUpon>
@@ -1723,36 +1724,47 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ar.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.az-Latn-AZ.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.id-ID.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ja-JP.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ko-KR.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.pt.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ru-KZ.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.tr.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.zh-Hans.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.zh-Hant.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.zh-TW.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MovingBase.resx">
       <DependentUpon>MovingBase.cs</DependentUpon>
@@ -2295,36 +2307,44 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ar.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.az-Latn-AZ.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.de-DE.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.es-ES.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.fr.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.id-ID.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.it-IT.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ja-JP.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ko-KR.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.pl.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.pt.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ru-KZ.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
@@ -2467,12 +2487,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.id-ID.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.ja-JP.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.ko-KR.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.pt.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
@@ -2488,9 +2510,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.zh-Hant.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.zh-TW.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\SoftwareConfig.resx">
       <DependentUpon>SoftwareConfig.cs</DependentUpon>
@@ -2561,9 +2585,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.de-DE.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.es-ES.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.fr.resx">
       <DependentUpon>ConfigAccelerometerCalibration.cs</DependentUpon>

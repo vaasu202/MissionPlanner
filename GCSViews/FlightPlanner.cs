@@ -1426,12 +1426,12 @@ namespace MissionPlanner.GCSViews
 
                     wpOverlay.overlay.ForceUpdate();
 
-                    lbl_distance.Text = rm.GetString("lbl_distance.Text") + ": " +
+                    /*lbl_distance.Text = rm.GetString("lbl_distance.Text") + ": " +
                                         FormatDistance((
                                             wpOverlay.overlay.Routes.SelectMany(a => a.Points)
                                                 .Select(a => (PointLatLngAlt) a)
                                                 .Aggregate(0.0, (d, p1, p2) => d + p1.GetDistance(p2))
-                                        ) / 1000.0, false);
+                                        ) / 1000.0, false);*/
 
                     setgradanddistandaz(wpOverlay.pointlist, home);
 
@@ -7839,6 +7839,16 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             MainMap.Position = MainV2.comPort.MAV.cs.HomeLocation;
             if (MainMap.Zoom < 17)
                 MainMap.Zoom = 17;
+        }
+
+        private void MainMap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void coords1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

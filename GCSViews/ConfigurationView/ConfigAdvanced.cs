@@ -113,5 +113,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         {
             new fftui().Show();
         }
+
+        private void ConfigAdvanced_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

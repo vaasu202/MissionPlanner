@@ -186,6 +186,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Config.zh-Hant.resx">
       <DependentUpon>Config.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Config.zh-TW.resx">
       <DependentUpon>Config.cs</DependentUpon>
