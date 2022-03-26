@@ -75,7 +75,7 @@ namespace MissionPlanner.Utilities.AltitudeAngel
                 cmd != MAVLink.MAV_CMD.FOLLOW &&
                 cmd != MAVLink.MAV_CMD.LOITER_TO_ALT &&
                 cmd != MAVLink.MAV_CMD.PATHPLANNING &&
-                cmd != MAVLink.MAV_CMD.SPLINE_WAYPOINT &&
+               // cmd != MAVLink.MAV_CMD.SPLINE_WAYPOINT &&
                 cmd != MAVLink.MAV_CMD.VTOL_TAKEOFF &&
                 cmd != MAVLink.MAV_CMD.VTOL_LAND &&
                 cmd != MAVLink.MAV_CMD.PAYLOAD_PLACE &&

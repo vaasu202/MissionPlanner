@@ -85,10 +85,10 @@ namespace MissionPlanner.GCSViews
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
             this.Commands = new MissionPlanner.Controls.MyDataGridView();
             this.Command = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Param1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.Param1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.Param2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.Param3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+           // this.Param4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,6 +104,8 @@ namespace MissionPlanner.GCSViews
             this.Angle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.new1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.new2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TagData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BUT_Add = new MissionPlanner.Controls.MyButton();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -468,10 +470,10 @@ namespace MissionPlanner.GCSViews
             this.Commands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Commands.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Command,
-            this.Param1,
-            this.Param2,
-            this.Param3,
-            this.Param4,
+            //this.Param1,
+            //this.Param2,
+            //this.Param3,
+            //this.Param4,
             this.Lat,
             this.Lon,
             this.Alt,
@@ -487,6 +489,8 @@ namespace MissionPlanner.GCSViews
             this.Angle,
             this.Dist,
             this.AZ,
+            this.new1,
+            this.new2,
             this.TagData});
             this.Commands.Name = "Commands";
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -521,27 +525,27 @@ namespace MissionPlanner.GCSViews
             // 
             // Param1
             // 
-            resources.ApplyResources(this.Param1, "Param1");
+           /* resources.ApplyResources(this.Param1, "Param1");
             this.Param1.Name = "Param1";
-            this.Param1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Param1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;*/
             // 
             // Param2
             // 
-            resources.ApplyResources(this.Param2, "Param2");
+            /*resources.ApplyResources(this.Param2, "Param2");
             this.Param2.Name = "Param2";
-            this.Param2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Param2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;*/
             // 
             // Param3
             // 
-            resources.ApplyResources(this.Param3, "Param3");
+           /* resources.ApplyResources(this.Param3, "Param3");
             this.Param3.Name = "Param3";
-            this.Param3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Param3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable; */
             // 
             // Param4
             // 
-            resources.ApplyResources(this.Param4, "Param4");
+           /* resources.ApplyResources(this.Param4, "Param4");
             this.Param4.Name = "Param4";
-            this.Param4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Param4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable; */
             // 
             // Lat
             // 
@@ -635,6 +639,18 @@ namespace MissionPlanner.GCSViews
             this.AZ.Name = "AZ";
             this.AZ.ReadOnly = true;
             this.AZ.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            //
+            // new1
+            //
+            resources.ApplyResources(this.new1, "new1");
+            this.new1.Name = "new1";
+            this.new1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            //
+            // new2
+            //
+            resources.ApplyResources(this.new2, "new2");
+            this.new2.Name = "new2";
+            this.new2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // TagData
             // 
@@ -1672,6 +1688,8 @@ namespace MissionPlanner.GCSViews
         private DataGridViewTextBoxColumn Angle;
         private DataGridViewTextBoxColumn Dist;
         private DataGridViewTextBoxColumn AZ;
+        private DataGridViewTextBoxColumn new1;
+        private DataGridViewTextBoxColumn new2;
         private DataGridViewTextBoxColumn TagData;
         private ToolStripMenuItem convertWPToPolygonToolStripMenuItem;
         private ToolStripMenuItem fromCurrentWaypointsToolStripMenuItem;

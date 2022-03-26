@@ -96,7 +96,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_log2kml = new MissionPlanner.Controls.MyButton();
             this.BUT_playlog = new MissionPlanner.Controls.MyButton();
             this.tracklog = new System.Windows.Forms.TrackBar();
-            this.tablogbrowse = new System.Windows.Forms.TabPage();
+            //this.tablogbrowse = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.BUT_DFMavlink = new MissionPlanner.Controls.MyButton();
             this.BUT_georefimage = new MissionPlanner.Controls.MyButton();
@@ -234,7 +234,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPaneltlogs.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tracklog)).BeginInit();
-            this.tablogbrowse.SuspendLayout();
+            //this.tablogbrowse.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -523,7 +523,7 @@ namespace MissionPlanner.GCSViews
             this.tabControlactions.Controls.Add(this.tabActionsSimple);
             this.tabControlactions.Controls.Add(this.tabPagePreFlight);
             this.tabControlactions.Controls.Add(this.tabTLogs);
-            this.tabControlactions.Controls.Add(this.tablogbrowse);
+           // this.tabControlactions.Controls.Add(this.tablogbrowse);
             resources.ApplyResources(this.tabControlactions, "tabControlactions");
             this.tabControlactions.Name = "tabControlactions";
             this.tabControlactions.SelectedIndex = 0;
@@ -1230,10 +1230,10 @@ namespace MissionPlanner.GCSViews
             // 
             // tablogbrowse
             // 
-            this.tablogbrowse.Controls.Add(this.tableLayoutPanel2);
+            /*this.tablogbrowse.Controls.Add(this.tableLayoutPanel2);
             resources.ApplyResources(this.tablogbrowse, "tablogbrowse");
             this.tablogbrowse.Name = "tablogbrowse";
-            this.tablogbrowse.UseVisualStyleBackColor = true;
+            this.tablogbrowse.UseVisualStyleBackColor = true; */
             // 
             // tableLayoutPanel2
             // 
@@ -2592,7 +2592,7 @@ namespace MissionPlanner.GCSViews
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tracklog)).EndInit();
-            this.tablogbrowse.ResumeLayout(false);
+            //this.tablogbrowse.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableMap.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -2714,7 +2714,7 @@ namespace MissionPlanner.GCSViews
         private Controls.MyButton BUT_speed1_4;
         private Controls.MyButton BUT_speed1_10;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TabPage tablogbrowse;
+        //public System.Windows.Forms.TabPage tablogbrowse;
         private Controls.MyButton BUT_logbrowse;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

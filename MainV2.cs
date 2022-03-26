@@ -655,14 +655,14 @@ namespace MissionPlanner
                     t.TabPages.Remove(FlightData.tabTLogs);
                 }
 
-                if (DisplayConfiguration.displayDataflashTab && !t.TabPages.Contains(FlightData.tablogbrowse))
+               /* if (DisplayConfiguration.displayDataflashTab && !t.TabPages.Contains(FlightData.tablogbrowse))
                 {
                     t.TabPages.Add(FlightData.tablogbrowse);
                 }
                 else if (!DisplayConfiguration.displayDataflashTab && t.TabPages.Contains(FlightData.tablogbrowse))
                 {
                     t.TabPages.Remove(FlightData.tablogbrowse);
-                }
+                } */
 
                 if (DisplayConfiguration.displayMessagesTab && !t.TabPages.Contains(FlightData.tabPagemessages))
                 {
@@ -1127,7 +1127,7 @@ namespace MissionPlanner
             }
 
             MenuArduPilot.Image = new Bitmap(Properties.Resources._0d92fed790a3a70170e61a86db103f399a595c70,
-                (int) (270), 37);
+                (int) (65), 37);
             MenuArduPilot.Width = MenuArduPilot.Image.Width;
 
             if (Program.Logo2 != null)

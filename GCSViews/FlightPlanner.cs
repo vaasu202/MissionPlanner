@@ -561,7 +561,7 @@ namespace MissionPlanner.GCSViews
             {
                 Commands.Rows[selectedrow].Cells[Command.Index].Value =
                     MAVLink.MAV_CMD.FENCE_CIRCLE_EXCLUSION.ToString();
-                Commands.Rows[selectedrow].Cells[Param1.Index].Value = 5;
+                //Commands.Rows[selectedrow].Cells[Param1.Index].Value = 5;
                 ChangeColumnHeader(MAVLink.MAV_CMD.FENCE_CIRCLE_EXCLUSION.ToString());
             }
             else if (splinemode)
@@ -1223,12 +1223,12 @@ namespace MissionPlanner.GCSViews
             convertFromGeographic(lat, lng);
 
             // Add more for other params
-            if (Commands.Columns[Param1.Index].HeaderText.Equals("Delay") && p1 != -1)
+           /* if (Commands.Columns[Param1.Index].HeaderText.Equals("Delay") && p1 != -1)
             {
                 cell = Commands.Rows[selectedrow].Cells[Param1.Index] as DataGridViewTextBoxCell;
                 cell.Value = p1;
                 cell.DataGridView.EndEdit();
-            }
+            }*/
 
             writeKML();
             Commands.EndEdit();
@@ -3014,15 +3014,15 @@ namespace MissionPlanner.GCSViews
                     temp.id = getCmdID(Commands.Rows[a].Cells[Command.Index].Value.ToString());
                 }
 
-                temp.p1 = float.Parse(Commands.Rows[a].Cells[Param1.Index].Value.ToString());
+                //temp.p1 = float.Parse(Commands.Rows[a].Cells[Param1.Index].Value.ToString());
 
                 if (Commands.Rows[a].Cells[Command.Index].Value.Equals("WAYPOINT"))
                 {
                     if (temp.p1 < 0)
                     {
                         temp.p1 = 0;
-                        DataGridViewTextBoxCell cell = Commands.Rows[a].Cells[Param1.Index] as DataGridViewTextBoxCell;
-                        cell.Value = temp.p1;
+                        //DataGridViewTextBoxCell cell = Commands.Rows[a].Cells[Param1.Index] as DataGridViewTextBoxCell;
+                        //cell.Value = temp.p1;
                     }
                 }
 
@@ -3032,9 +3032,9 @@ namespace MissionPlanner.GCSViews
                 temp.lat = (double.Parse(Commands.Rows[a].Cells[Lat.Index].Value.ToString()));
                 temp.lng = (double.Parse(Commands.Rows[a].Cells[Lon.Index].Value.ToString()));
 
-                temp.p2 = (float) (double.Parse(Commands.Rows[a].Cells[Param2.Index].Value.ToString()));
-                temp.p3 = (float) (double.Parse(Commands.Rows[a].Cells[Param3.Index].Value.ToString()));
-                temp.p4 = (float) (double.Parse(Commands.Rows[a].Cells[Param4.Index].Value.ToString()));
+                //temp.p2 = (float) (double.Parse(Commands.Rows[a].Cells[Param2.Index].Value.ToString()));
+                //temp.p3 = (float) (double.Parse(Commands.Rows[a].Cells[Param3.Index].Value.ToString()));
+               // temp.p4 = (float) (double.Parse(Commands.Rows[a].Cells[Param4.Index].Value.ToString()));
 
                 temp.Tag = Commands.Rows[a].Cells[TagData.Index].Value;
 
@@ -3326,7 +3326,7 @@ namespace MissionPlanner.GCSViews
             if (cmd == MAVLink.MAV_CMD.WAYPOINT)
             {
                 // add delay if supplied
-                Commands.Rows[rowIndex].Cells[Param1.Index].Value = p1;
+                //Commands.Rows[rowIndex].Cells[Param1.Index].Value = p1;
 
                 setfromMap(y, x, (int) z, Math.Round(p1, 1));
             }
@@ -3336,10 +3336,10 @@ namespace MissionPlanner.GCSViews
             }
             else
             {
-                Commands.Rows[rowIndex].Cells[Param1.Index].Value = p1;
-                Commands.Rows[rowIndex].Cells[Param2.Index].Value = p2;
-                Commands.Rows[rowIndex].Cells[Param3.Index].Value = p3;
-                Commands.Rows[rowIndex].Cells[Param4.Index].Value = p4;
+               // Commands.Rows[rowIndex].Cells[Param1.Index].Value = p1;
+                //Commands.Rows[rowIndex].Cells[Param2.Index].Value = p2;
+               // Commands.Rows[rowIndex].Cells[Param3.Index].Value = p3;
+               // Commands.Rows[rowIndex].Cells[Param4.Index].Value = p4;
                 Commands.Rows[rowIndex].Cells[Lat.Index].Value = y;
                 Commands.Rows[rowIndex].Cells[Lon.Index].Value = x;
                 Commands.Rows[rowIndex].Cells[Alt.Index].Value = z;
@@ -3991,9 +3991,9 @@ namespace MissionPlanner.GCSViews
 
             Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.DO_JUMP.ToString();
 
-            Commands.Rows[selectedrow].Cells[Param1.Index].Value = 1;
+            //Commands.Rows[selectedrow].Cells[Param1.Index].Value = 1;
 
-            Commands.Rows[selectedrow].Cells[Param2.Index].Value = repeat;
+            //Commands.Rows[selectedrow].Cells[Param2.Index].Value = repeat;
 
             writeKML();
         }
@@ -4011,9 +4011,9 @@ namespace MissionPlanner.GCSViews
 
             Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.DO_JUMP.ToString();
 
-            Commands.Rows[selectedrow].Cells[Param1.Index].Value = wp;
+            //Commands.Rows[selectedrow].Cells[Param1.Index].Value = wp;
 
-            Commands.Rows[selectedrow].Cells[Param2.Index].Value = repeat;
+            //Commands.Rows[selectedrow].Cells[Param2.Index].Value = repeat;
 
             writeKML();
         }
@@ -4634,7 +4634,7 @@ namespace MissionPlanner.GCSViews
 
             Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LOITER_TURNS.ToString();
 
-            Commands.Rows[selectedrow].Cells[Param1.Index].Value = turns;
+            //Commands.Rows[selectedrow].Cells[Param1.Index].Value = turns;
 
             ChangeColumnHeader(MAVLink.MAV_CMD.LOITER_TURNS.ToString());
 
@@ -4667,7 +4667,7 @@ namespace MissionPlanner.GCSViews
 
             Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LOITER_TIME.ToString();
 
-            Commands.Rows[selectedrow].Cells[Param1.Index].Value = time;
+           // Commands.Rows[selectedrow].Cells[Param1.Index].Value = time;
 
             ChangeColumnHeader(MAVLink.MAV_CMD.LOITER_TIME.ToString());
 
@@ -5188,13 +5188,13 @@ namespace MissionPlanner.GCSViews
                 cell = Commands.Rows[i].Cells[Lon.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.lng;
 
-                cell = Commands.Rows[i].Cells[Param1.Index] as DataGridViewTextBoxCell;
+               // cell = Commands.Rows[i].Cells[Param1.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.p1;
-                cell = Commands.Rows[i].Cells[Param2.Index] as DataGridViewTextBoxCell;
+               // cell = Commands.Rows[i].Cells[Param2.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.p2;
-                cell = Commands.Rows[i].Cells[Param3.Index] as DataGridViewTextBoxCell;
+               // cell = Commands.Rows[i].Cells[Param3.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.p3;
-                cell = Commands.Rows[i].Cells[Param4.Index] as DataGridViewTextBoxCell;
+                //cell = Commands.Rows[i].Cells[Param4.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.p4;
 
                 // convert to utm/other
@@ -6316,7 +6316,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
             Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.TAKEOFF.ToString();
 
-            Commands.Rows[selectedrow].Cells[Param1.Index].Value = topi;
+           // Commands.Rows[selectedrow].Cells[Param1.Index].Value = topi;
 
             Commands.Rows[selectedrow].Cells[Alt.Index].Value = alti;
 
@@ -7310,7 +7310,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                             foreach (var locationwp in sublist)
                             {
                                 var idx = currentlist.IndexOf(locationwp);
-                                Commands[Param1.Index, idx].Value = newcount;
+                               // Commands[Param1.Index, idx].Value = newcount;
                             }
 
                             return;
@@ -7351,7 +7351,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                             foreach (var locationwp in sublist)
                             {
                                 var idx = currentlist.IndexOf(locationwp);
-                                Commands[Param1.Index, idx].Value = newcount;
+                               // Commands[Param1.Index, idx].Value = newcount;
                             }
 
                             return;

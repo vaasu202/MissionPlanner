@@ -830,9 +830,7 @@ public partial class MAVLink
         DO_INVERTED_FLIGHT=210, 
         ///<summary> Mission command to operate a gripper. |Gripper instance number.| Gripper action to perform.| Empty| Empty| Empty| Empty| Empty|  </summary>
         [Description("Mission command to operate a gripper.")]
-        DO_GRIPPER=211, 
-        ///<summary> Enable/disable autotune. |Enable (1: enable, 0:disable).| Empty.| Empty.| Empty.| Empty.| Empty.| Empty.|  </summary>
-        [Description("Enable/disable autotune.")]
+        
         DO_AUTOTUNE_ENABLE=212, 
         ///<summary> Sets a desired vehicle turn angle and speed change. |Yaw angle to adjust steering by.| Speed.| Final angle. (0=absolute, 1=relative)| Empty| Empty| Empty| Empty|  </summary>
         [Description("Sets a desired vehicle turn angle and speed change.")]
