@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+
+<!-- TAGS ARE CASE SENSATIVE -->
+<CMD>
+  <AC2>
+    <WAYPOINT>
+      <P1>Delay</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </WAYPOINT>
+    
+    <LOITER_TURNS>
+      <P1>Turns</P1>
+      <P2></P2>
+      <P3>Radius</P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TURNS>
+    <LOITER_TIME>
+      <P1>Time s</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TIME>
+    
+    <RETURN_TO_LAUNCH>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </RETURN_TO_LAUNCH>
+    <LAND>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LAND>
+    <TAKEOFF>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z>Alt</Z>
+    </TAKEOFF>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </AC2>
+  <!-- -->
+  <APM>
+    <WAYPOINT>
+      <P1></P1>
+      <P2>Acc radius</P2>
+      <P3>Pass by dist</P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </WAYPOINT>
+    
+    <LOITER_TURNS>
+      <P1>Turns</P1>
+      <P2></P2>
+      <P3>Radius</P3>
+      <P4>1=Exit Tangent</P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TURNS>
+    <LOITER_TIME>
+      <P1>Time s</P1>
+      <P2></P2>
+      <P3>Dir 1=CW</P3>
+      <P4>1=Exit Tangent</P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TIME>
+    <LOITER_TO_ALT>
+      <P1></P1>
+      <P2>Radius</P2>
+      <P3></P3>
+      <P4>1=Exit Tangent</P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TO_ALT>
+    <RETURN_TO_LAUNCH>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </RETURN_TO_LAUNCH>
+    <LAND>
+      <P1>Abort Alt</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LAND>
+    <TAKEOFF>
+      <P1>Pitch Angle</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z>Alt</Z>
+    </TAKEOFF>
+    <VTOL_TAKEOFF>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z>Alt</Z>
+    </VTOL_TAKEOFF>
+    <VTOL_LAND>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </VTOL_LAND>
+    <SCRIPT_TIME>
+      <P1>commandId</P1>
+      <P2>timeout</P2>
+      <P3>arg1</P3>
+      <P4>arg2</P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </SCRIPT_TIME>
+    <DO_VTOL_TRANSITION>
+      <P1>mode (3=mc/4=plane)</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_VTOL_TRANSITION>
+    <DO_AUX_FUNCTION>
+      <P1>AuxFunction</P1>
+      <P2>SwitchPosition</P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_AUX_FUNCTION>
+    <ALTITUDE_WAIT>
+      <P1>Alt</P1>
+      <P2>Descent rate</P2>
+      <P3>Wiggle time</P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </ALTITUDE_WAIT>
+    <CONTINUE_AND_CHANGE_ALT>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z>Alt</Z>
+    </CONTINUE_AND_CHANGE_ALT>
+    
+    
+    
+    <DO_LAND_START>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z></Z>
+    </DO_LAND_START>
+    
+    <DO_INVERTED_FLIGHT>
+      <P1>0=normal, 1=inverted</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_INVERTED_FLIGHT>
+    
+    
+    
+    <DO_SET_HOME>
+      <P1>Current(1)/Spec(0)</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </DO_SET_HOME>
+    
+    
+    
+    
+    
+    
+    <DO_MOUNT_CONFIGURE>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_MOUNT_CONFIGURE>
+    
+    
+    <DO_FENCE_ENABLE>
+      <P1>Disable(0)/Enable(1)/Disable Floor Only(2)</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_FENCE_ENABLE>
+  </APM>
+  <!-- -->
+  <APRover>
+    <WAYPOINT>
+      <P1>Delay</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </WAYPOINT>
+    
+    <LOITER_TIME>
+      <P1>Time s</P1>
+      <P2></P2>
+      <P3>Dir 1=CW</P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </LOITER_TIME>
+    <RETURN_TO_LAUNCH>
+      <P1></P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </RETURN_TO_LAUNCH>
+    
+    
+    <SET_YAW_SPEED>
+      <P1>angle(CD)</P1>
+      <P2>Speed(0..1)</P2>
+      <P3>0=Abs,1=Rel</P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </SET_YAW_SPEED>
+    
+    
+    
+    <DO_SET_REVERSE>
+      <P1>Direction (0=F,1=R)</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X></X>
+      <Y></Y>
+      <Z></Z>
+    </DO_SET_REVERSE>
+    
+    
+    
+    <DO_SET_HOME>
+      <P1>Current(1)/Spec(0)</P1>
+      <P2></P2>
+      <P3></P3>
+      <P4></P4>
+      <X>Lat</X>
+      <Y>Long</Y>
+      <Z>Alt</Z>
+    </DO_SET_HOME>
+    
+    
+    
+    
+    
+    
+    
+    
+  </APRover>
+</CMD>
